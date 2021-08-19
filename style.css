@@ -161,7 +161,7 @@ body{
     color: #fff;
     right: 145px;
     bottom: 110px;
-    animation: man 3s ease-in-out infinite;
+    animation: man 5s ease-in-out infinite;
 }
 @keyframes man{
     0%{right: 145px; bottom: 110px; opacity: 1;}
@@ -185,7 +185,7 @@ body{
     right: 429px;
     bottom: 320px;
     opacity: 0;
-    animation: trophy 3s ease-in-out  infinite;
+    animation: trophy 5s ease-in-out  infinite;
 }
 @keyframes trophy{
     0%{ opacity: 0;}

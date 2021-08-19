@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-size: 16px;
     font-family: 'Spartan', sans-serif;
+    position: relative;
 }
 
 
@@ -48,9 +49,103 @@ body{
     font-family: 'Mulish', sans-serif;
     position: relative;
 }
+/*navigation-bar*/
+.navigation-bar{
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+.navigation-bar .in-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-bar .in-nav .logo {
+
+    width: 20%;
+}
+
+.in-nav .logo .in-logo {
+    position: relative;
+    padding: 7% 0;  
+    overflow: hidden;
+}
+.in-nav .logo .in-logo img {
+    position: absolute;
+   width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+.in-nav .nav-bar {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #fff;
+    justify-content: flex-end;
+}
+
+.nav-bar a {
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    margin: 0 14px;
+    position: relative;
+}
+.nav-bar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 57%;
+    height: 2px;
+    bottom: -7px;
+    left: 0;
+    background-color: #000;
+}
+
+.in-nav .side-bar{
+    width: 5%;
+    text-align: right;
+    position: relative;
+    display: none;
+}
+.in-nav .side-bar a {
+    color: #000;
+    opacity: 0.6;
+        display: block;
+}
+#small-screen-nav {
+    width: 100%;
+    padding: 212px 0;
+    top: -158px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+.small-nav-bar {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background: #fff;
+
+}
+.small-nav-bar a {
+    color: #000;
+    text-decoration: none;
+    opacity: 0.6;
+    padding: 12px 0;
+    border-bottom: 1px solid #000;
+}
 /*banner*/
 .banner {
-    padding-top: 75px;
+    padding-top: 120px;
     background-color: #3A786C;
     position: relative;
     background: rgb(37,36,36);
@@ -331,3 +426,248 @@ body{
     background-color: #FFE9C4;
     border-radius: 10px;
 }
+
+/*media query*/
+
+@media screen and (min-width: 1400px){
+    body {
+        font-size: 16px;
+    }
+    .heading1 {
+        font-size: 36px;
+    }
+    .heading2 {
+        font-size: 30px;
+    }
+    .heading3{
+        font-size: 24px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .banner {
+        padding-top: 120px;
+    }
+
+    .what-is-faang {
+        padding: 40px 16%;
+    }
+    .interview-process {
+        padding: 40px 16%;
+    }
+    .criteria {
+        padding: 40px 16%;
+    }
+    .into-faang {
+        padding: 40px 16%;
+    }
+}
+@media screen and (max-width: 1200px){
+    body {
+        font-size: 16px;
+    }
+    .heading1 {
+        font-size: 32px;
+    }
+    .heading2 {
+        font-size: 26px;
+    }
+    .heading3{
+        font-size: 22px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .banner {
+        padding-top: 110px;
+    }
+
+    .banner-image img {
+        top: -23px;
+        left: 13%;
+    }
+
+    .banner-image .man i.fas {
+        font-size: 54px;
+        right: 15%;
+        bottom: 27%;
+        animation: man 5s ease-in-out infinite;
+    }
+
+    @keyframes man{
+        0%{right: 15%; bottom: 27%; opacity: 1;}
+        10%{right: 15%; bottom: 42%; opacity: 1;}
+        20%{right: 25%; bottom: 42%; opacity: 1;}
+        30%{right: 25%; bottom: 55%; opacity: 1;}
+        40%{right: 34%; bottom: 55%; opacity: 1;}
+        50%{right: 34%; bottom: 69%; opacity: 1;}
+        60%{right: 42%; bottom: 69%; opacity: 1;}
+        70%{right: 42%; bottom: 84%; opacity: 1;}
+        80%{right: 50%; bottom: 84%; opacity: 1;}
+        /*90%{right: 352px; bottom: 290px;}*/
+        100%{right: 50%; bottom: 84%; opacity: 0;}
+
+    }
+   .banner-image .trophy i.fas{
+        right: 50%;
+        bottom: 84%;
+        animation: trophy 5s ease-in-out  infinite;
+    }
+    .what-is-faang {
+        padding: 40px 14%;
+    }
+    .interview-process {
+       padding: 40px 14%;
+    }
+    .criteria {
+        padding: 40px 14%;
+    }
+    .into-faang {
+        padding: 40px 14%;
+    }
+    .interview-course {
+        padding: 40px 14%;
+    }
+    .mock-interview {
+         padding: 40px 14%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    body {
+        font-size: 14px;
+    }
+    .heading1 {
+        font-size: 30px;
+    }
+    .heading2 {
+        font-size: 22px;
+    }
+    .heading3{
+        font-size: 20px;
+    }
+    .paragraph{
+        font-size: 14px;
+    }
+    .banner {
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+    .banner-image {
+        display: none;
+    }
+    .what-is-faang {
+        padding: 40px 10%;
+    }
+    .interview-process {
+       padding: 40px 10%;
+    }
+    .criteria {
+        padding: 40px 10%;
+    }
+    .into-faang {
+        padding: 40px 10%;
+    }
+    .interview-course {
+        padding: 40px 10%;
+    }
+    .mock-interview {
+         padding: 40px 10%;
+    }
+}
+@media screen and (max-width: 768px){
+    body {
+        font-size: 14px;
+    }
+    .heading1 {
+        font-size: 28px;
+    }
+    .heading2 {
+        font-size: 20px;
+    }
+    .heading3{
+        font-size: 18px;
+    }
+    .paragraph{
+        font-size: 12px;
+    }
+    .banner {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+     .banner-image {
+        display: none;
+    }
+    .in-nav .nav-bar {
+        display: none;
+    }
+    .in-nav .side-bar {
+        display: block;
+    }
+    .what-is-faang {
+        padding: 40px 6%;
+    }
+    .interview-process {
+       padding: 40px 6%;
+    }
+    .criteria {
+        padding: 40px 6%;
+    }
+    .into-faang {
+        padding: 40px 6%;
+    }
+    .interview-course {
+        padding: 40px 6%;
+    }
+    .mock-interview {
+         padding: 40px 6%;
+    }
+}
+@media screen and (max-width: 576px){
+    body {
+        font-size: 12px;
+    }
+    .heading1 {
+        font-size: 26px;
+    }
+    .heading2 {
+        font-size: 18px;
+    }
+    .heading3{
+        font-size: 16px;
+    }
+    .paragraph{
+        font-size: 12px;
+    }
+    .banner {
+        padding-top: 70px;
+    }
+     .banner-image {
+        display: none;
+    }
+    .in-nav .nav-bar {
+        display: none;
+    }
+     .in-nav .side-bar {
+        display: block;
+    }
+    .what-is-faang {
+        padding: 40px 4%;
+    }
+    .interview-process {
+       padding: 40px 4%;
+    }
+    .criteria {
+        padding: 40px 4%;
+    }
+    .into-faang {
+        padding: 40px 4%;
+    }
+    .interview-course {
+        padding: 40px 4%;
+    }
+    .mock-interview {
+         padding: 40px 4%;
+    }
+}
+

@@ -1,0 +1,333 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+/*for all*/
+.heading1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+.heading1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -12px;
+    left: 0;
+    background-color: #e04777;
+}
+.heading2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+}
+.heading3{
+	font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+}
+.paragraph{
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 15px 0;
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+}
+/*banner*/
+.banner {
+    padding-top: 75px;
+    background-color: #3A786C;
+    position: relative;
+    background: rgb(37,36,36);
+    background: linear-gradient(90deg, rgba(37,36,36,1) 1%, rgba(241,160,185,0.9925012241224614) 100%);
+    overflow: hidden;
+}
+
+.in-banner {
+    display: flex;
+    width: 100%;
+}
+
+.banner-text {
+    position: relative;
+    width: 30%;
+}
+
+
+.banner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+    left: 55px;
+    position: relative;
+    animation: title 1s ease-in-out ;
+}
+
+@keyframes title{
+	from{
+		top: -86px;
+        opacity: 0;
+	}
+	to{
+		top: 0px;
+        opacity: 1;
+	}
+}
+
+.author {
+    font-family: 'Pacifico', cursive;
+    color: #7A7677;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    left: 55px;
+    animation: author 4s ease-in-out;
+
+}
+@keyframes author{
+	0%{
+		top: -76px;
+		opacity: 0;
+	}
+	80%{
+	    /*top: -26px;*/
+		opacity: 0.1;
+	}
+
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.date {
+    opacity: 0.7;
+    font-size: 14px;
+    color: #7A7677;
+    position: relative;
+    left: 55px;
+    animation: date 6s ease-in-out ;
+}
+@keyframes date{
+	0%{
+        top: -76px;
+        opacity: 0;
+    }
+	80%{
+        /*top: -26px;*/
+        opacity: 0.1;
+    }
+
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+.banner-image {
+    position: relative;
+    overflow: hidden; 
+    width: 70%;
+    padding: 17% 0;
+}
+
+.banner-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: -27px;
+    left: 10%;
+}
+
+.banner-image .man i.fas {
+    position: absolute;
+    font-size: 56px;
+    color: #fff;
+    right: 145px;
+    bottom: 110px;
+    animation: man 3s ease-in-out infinite;
+}
+@keyframes man{
+    0%{right: 145px; bottom: 110px; opacity: 1;}
+    10%{right: 145px; bottom: 162px; opacity: 1;}
+    20%{right: 218px; bottom: 162px; opacity: 1;}
+    30%{right: 218px; bottom: 210px; opacity: 1;}
+    40%{right: 288px; bottom: 210px; opacity: 1;}
+    50%{right: 288px; bottom: 262px; opacity: 1;}
+    60%{right: 352px; bottom: 262px; opacity: 1;}
+    70%{right: 352px; bottom: 318px; opacity: 1;}
+    80%{right: 416px; bottom: 318px; opacity: 1;}
+    /*90%{right: 352px; bottom: 290px;}*/
+    100%{right: 416px; bottom: 318px; opacity: 0;}
+
+}
+
+.banner-image .trophy i.fas{
+    position: absolute;
+    font-size: 32px;
+    color: #FCE33D;
+    right: 429px;
+    bottom: 320px;
+    opacity: 0;
+    animation: trophy 3s ease-in-out  infinite;
+}
+@keyframes trophy{
+    0%{ opacity: 0;}
+    10%{ opacity: 0;}
+    20%{ opacity: 0;}
+    30%{ opacity: 0;}
+    40%{ opacity: 0;}
+    50%{ opacity: 0;}
+    60%{ opacity: 0;}
+    70%{ opacity: 0;}
+    80%{ opacity: 0;}
+    /*90%{right: 352px; bottom: 290px;}*/
+    100%{ opacity: 1;}
+
+}
+/*what-is-faang*/
+.what-is-faang {
+    padding: 40px 18%;
+    position: relative;
+}
+
+/*interview-process*/
+.interview-process{
+	padding:40px 18%;
+    position: relative;
+}
+
+.in-interview-process ul li {
+    list-style: none;
+}
+/*criteria*/
+.criteria{
+	padding: 40px 18%;
+    position: relative;
+}
+
+/*into-faang*/
+.into-faang{
+	padding:40px 18%;
+    position: relative;
+}
+
+/*interview-course*/
+.interview-course{
+	padding: 40px 18%;
+    position: relative;
+}
+
+/*mock-interview*/
+.mock-interview{
+	padding: 40px 18%;
+    position: relative;
+}
+.mock-interview::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 31px;   
+    left: 0;
+    background-color: #e04777;
+}
+/*comments section*/
+
+.comment-container{
+    display: none;
+	margin:64px 0;
+	padding:16px;
+}
+.comment-container .comment-box img{
+	width: 60px;
+    height: 66px;
+    border-radius: 50%;
+    margin: 15px;
+}
+.comment-container .comment-box {
+    display: flex;
+}
+.comment-container .comment-box .review{
+	padding:15px 0;
+
+}
+.comment-container .comment-box .review p{
+    margin: 5px 0;
+    color:#7D7D7D;
+}
+.comment-box .review p:nth-child(3){
+	margin: 25px 0;
+    color: #000;
+    font-size: 14px;
+}
+.comment-box .review h5 span{
+	color: #A1A1A1;
+    font-size: 10px;
+    margin: 0 20px;
+}
+.comment-box .review p .fas, .far{
+	color: #f3164d;
+    margin: 0 5px 0 30px;
+}
+.comment-container button{
+	width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #3A786C;
+    color: #3A786C;
+}
+.comment-container .black-heading{
+	text-align:left;
+}
+.comment-container .black-heading span{
+	padding: 0 13px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #3A786C;
+	color: #3A786C;
+
+}
+
+.write-comments {
+    display: flex;
+    justify-content: space-between;
+}
+.write-comments .comment-button {
+    width: 15%;
+    height: 10%;
+    padding: 10px 10px;
+    color: #fff;
+    margin-left: 10px;
+    background-color: #3A786C;
+    border: 1px solid #3A786C;
+}
+
+.write-comments .comment-button:hover {
+	color: #3A786C;
+    background: #fff;
+}
+
+.write-comments #write-comment {
+    margin-bottom: 30px;
+    border: none;
+    background-color: #FFE9C4;
+    border-radius: 10px;
+}
